@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三栏布局</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 浮动方式 -->
+  <div class="float">
+    <style>
+      .float {
+        height: 100px;
+      }
+      .float div {
+        height: 100%;
+      }
+      .float .left {
+        float: left;
+        width: 300px;
+        background: green;
+      }
+      .float .right {
+        float: right;
+        width: 300px;
+        background: green;
+      }
+      .float .center {
+        background: yellow;
+      }
+    </style>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center">浮动布局</div>
+  </div>
+
+  <!-- 定位 -->
+  <div class="position">
+    <style>
+      .position {
+        position: relative;
+        margin-top: 10px;
+        height: 100px;
+      }
+      .position div {
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+      .position .left {
+        left: 0;
+        width: 300px;
+        background: green;
+      }
+      .position .center {
+        left: 300px;
+        right: 300px;
+        background: yellow;
+      }
+      .position .right {
+        right: 0;
+        width: 300px;
+        background: green;
+      }
+    </style>
+    <div class="left"></div>
+    <div class="center">定位</div>
+    <div class="right"></div>
+  </div>
+
+  <!-- flex -->
+  <div class="flex">
+    <style>
+      .flex {
+        display: flex;
+        margin-top: 10px;
+        height: 100px;
+      }
+      .flex  div {
+        height: 100%;
+      }
+      .flex .left {
+        width: 300px;
+        background: green;
+      }
+      .flex .center {
+        flex: 1;
+        background: yellow;
+      }
+      .flex .right {
+        width: 300px;
+        background: green;
+      }
+    </style>
+    <div class="left"></div>
+    <div class="center">flex</div>
+    <div class="right"></div>
+  </div>
+
+  <!-- table -->
+  <div class="table">
+    <style>
+      .table {
+        display: table;
+        margin-top: 10px;
+        width: 100%;
+        height: 100px;
+      }
+      .table div {
+        display: table-cell;
+        height: 100%;
+      }
+      .table .left {
+        width: 300px;
+        background: green;
+      }
+      .table .center {
+        background: yellow;
+      }
+      .table .right {
+        width: 300px;
+        background: green;
+      }
+    </style>
+    <div class="left"></div>
+    <div class="center">table</div>
+    <div class="right"></div>
+  </div>
+
+  <!-- 网格布局 -->
+  
+</body>
+</html>
